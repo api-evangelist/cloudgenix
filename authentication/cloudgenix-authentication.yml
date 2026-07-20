@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/CloudGenix/sdk-python
+docs: https://developers.cloudgenix.com/
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  notes: >-
+    Token-based authentication. Callers obtain an auth token (via interactive
+    login, SAML 2.0 SSO, or a static AUTH_TOKEN) and present it on every request
+    in the X-Auth-Token header against the CloudGenix Cloud Controller. MSP /
+    ESP tenant switching is supported by the SDK.
+schemes:
+  - name: authToken
+    type: apiKey
+    in: header
+    parameter: X-Auth-Token
+    description: CloudGenix Cloud Controller auth token, presented on every API request.
+    sources: [https://github.com/CloudGenix/sdk-python]
+login_methods:
+  - interactive
+  - saml2.0
+  - static-auth-token
+controller_default: https://api.elcapitan.cloudgenix.com
