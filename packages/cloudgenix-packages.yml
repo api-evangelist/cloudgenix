@@ -1,0 +1,50 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/CloudGenix
+note: >-
+  CloudGenix was acquired by Palo Alto Networks (April 2020) and rebranded as
+  Prisma SD-WAN. The first-party SDKs below remain published under the official
+  CloudGenix GitHub organization (all MIT licensed) against the CloudGenix
+  AppFabric / Cloud Controller API.
+packages:
+  - language: python
+    registry: pypi
+    name: cloudgenix
+    url: https://pypi.org/project/cloudgenix/
+    install: pip install cloudgenix
+    source_code: https://github.com/CloudGenix/sdk-python
+    version: 6.6.2b1
+    official: true
+    description: Python2/Python3 SDK for the CloudGenix AppFabric (Cloud Controller).
+  - language: python
+    registry: pypi
+    name: cloudgenix-config
+    url: https://pypi.org/project/cloudgenix-config/
+    install: pip install cloudgenix-config
+    source_code: https://github.com/CloudGenix/cloudgenix_config
+    version: 2.1.0b1
+    official: true
+    description: >-
+      Configuration export and CI-capable configuration import for the
+      CloudGenix Cloud Controller; ships the pull_site / do_site CLI commands.
+  - language: csharp
+    registry: github
+    name: sdk-csharp
+    url: https://github.com/CloudGenix/sdk-csharp
+    source_code: https://github.com/CloudGenix/sdk-csharp
+    official: true
+    description: CloudGenix Controller SDK in C#.
+  - language: java
+    registry: github
+    name: sdk-java
+    url: https://github.com/CloudGenix/sdk-java
+    source_code: https://github.com/CloudGenix/sdk-java
+    official: true
+    description: CloudGenix Controller SDK in Java.
+  - language: javascript
+    registry: github
+    name: sdk-nodejs
+    url: https://github.com/CloudGenix/sdk-nodejs
+    source_code: https://github.com/CloudGenix/sdk-nodejs
+    official: true
+    description: CloudGenix Controller SDK in JavaScript (Node.js).

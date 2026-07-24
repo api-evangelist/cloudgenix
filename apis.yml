@@ -1,7 +1,15 @@
 aid: cloudgenix
 name: Cloudgenix
-description: Cloudgenix is a company surfaced as a portfolio company of mayfield and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CloudGenix was a cloud-native SD-WAN (software-defined wide area network)
+  company founded in 2013 and backed by Mayfield. Its AppFabric platform let
+  enterprises build application-defined, policy-driven WANs managed from a cloud
+  controller, with a full REST API (the CloudGenix Cloud Controller / AppFabric
+  API) and first-party SDKs in Python, C#, Java, and JavaScript plus a
+  CI-capable configuration CLI. Palo Alto Networks acquired CloudGenix in April
+  2020 for more than $420M and rebranded the product as Prisma SD-WAN, now part
+  of the Prisma SASE portfolio. The public developer tooling remains published
+  under the official CloudGenix GitHub organization.
 url: https://raw.githubusercontent.com/api-evangelist/cloudgenix/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +17,72 @@ x-backed-by:
 - mayfield
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Palo Alto Networks
+x-acquired-date: '2020-04-21'
+x-successor-product: Prisma SD-WAN
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://avatars.githubusercontent.com/CloudGenix
 tags:
 - Company
-apis: []
+- SD-WAN
+- Networking
+- Cloud
+- Software Defined Networking
+- Network Automation
+- SASE
+- Infrastructure
+apis:
+- name: CloudGenix Cloud Controller API
+  description: >-
+    REST API for the CloudGenix AppFabric / Cloud Controller — manage sites,
+    elements (ION devices), WAN networks, application policies, and telemetry.
+    Token-authenticated via the X-Auth-Token header.
+  humanURL: https://developers.cloudgenix.com/
+  baseURL: https://api.elcapitan.cloudgenix.com
+  tags:
+  - SD-WAN
+  - Networking
+  - Cloud
+  properties:
+  - type: APIReference
+    url: https://developers.cloudgenix.com/
+  - type: Authentication
+    url: authentication/cloudgenix-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Documentation
+  url: https://developers.cloudgenix.com/
+- type: GitHubOrganization
+  url: https://github.com/CloudGenix
+- type: Packages
+  url: packages/cloudgenix-packages.yml
+- type: SDKs
+  url: packages/cloudgenix-packages.yml
+- type: CLI
+  url: cli/cloudgenix-cli.yml
+- type: Authentication
+  url: authentication/cloudgenix-authentication.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

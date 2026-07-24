@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/CloudGenix/cloudgenix_config
+name: cloudgenix-config
+description: >-
+  First-party CLI for the CloudGenix Cloud Controller, shipped by the
+  cloudgenix-config PyPI package. Provides declarative configuration
+  export (pull) and Continuous Integration (CI) capable configuration
+  import (push/do) of CloudGenix sites, built on the cloudgenix Python SDK.
+install:
+  - method: pip
+    command: pip install cloudgenix-config
+package: packages/cloudgenix-packages.yml
+authentication:
+  header: X-Auth-Token
+  notes: Uses the cloudgenix SDK auth (interactive/SAML2.0 login or static AUTH_TOKEN env var).
+commands:
+  - name: pull_site
+    description: Export/download a site's configuration from the CloudGenix Cloud Controller to a YAML file.
+  - name: do_site
+    description: Apply (import) a site configuration YAML to the CloudGenix Cloud Controller; CI-capable.
+docs: https://github.com/CloudGenix/cloudgenix_config
