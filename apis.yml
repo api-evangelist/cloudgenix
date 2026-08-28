@@ -21,6 +21,17 @@ x-status: acquired
 x-acquired-by: Palo Alto Networks
 x-acquired-date: '2020-04-21'
 x-successor-product: Prisma SD-WAN
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
