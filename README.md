@@ -64,6 +64,50 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cloudgenix is a company surfaced as a portfolio company of mayfield and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: mayfield
+CloudGenix was a cloud-native SD-WAN (software-defined wide area network) company founded in 2013 and backed by Mayfield. Its AppFabric platform let enterprises build application-defined, policy-driven WANs managed from a cloud controller, with a full REST API (the CloudGenix Cloud Controller / AppFabric API) and first-party SDKs in Python, C#, Java, and JavaScript plus a CI-capable configuration CLI. Palo Alto Networks acquired CloudGenix in April 2020 for more than $420M and rebranded the product as Prisma SD-WAN, now part of the Prisma SASE portfolio. The public developer tooling remains published under the official CloudGenix GitHub organization.
+
+**Areas:** Company · SD-WAN · Networking · Cloud · Software Defined Networking · Network Automation · SASE · Infrastructure
+
+## Cloudgenix on APIs.io (historical record)
+
+Everything profiled for Cloudgenix is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cloudgenix/](https://apis.io/providers/cloudgenix/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [CloudGenix Cloud Controller API](https://apis.io/apis/cloudgenix/cloudgenix-cloud-controller-api/) — REST API for the CloudGenix AppFabric / Cloud Controller — manage sites, elements (ION devices), WAN networks, application policies, and telemetry.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cloudgenix Authentication](https://apis.io/security/cloudgenix/cloudgenix-authentication/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cloudgenix.com)
+- [Documentation](https://developers.cloudgenix.com/)
+- [GitHub](https://github.com/CloudGenix)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cloudgenix: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cloudgenix/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
